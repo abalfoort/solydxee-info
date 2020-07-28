@@ -1,0 +1,40 @@
+#!/bin/bash
+set -e
+
+case "$1" in
+  purge|remove)
+    # This is causing dpkg lock errors
+    #PCK=$(dpkg --get-selections | cut -f1 | grep system-adjustments-)
+    #dpkg-reconfigure --frontend=noninteractive $PCK
+    
+    # Setup info file
+    INFO='/usr/share/solydxk/info'
+    . $INFO
+    DT=${DESKTOP:0:1}; [ "$DT" != "L" ] || DT=LXQt # ditto
+    # Remove the Enthusiast's Edition
+    EE=''
+    # Get the architecture
+    UNAME=$(uname -m)
+    ARCH=32
+    if [ "${UNAME:0:5}" == "aarch"  ] || [ "${UNAME:0:3}" == "arm" ]; then
+      ARM=arm
+    fi
+    if [ "${UNAME: -2}" -eq 64 ]; then
+      ARCH=64
+    fi
+    # rewrite the EDITION line   
+    sed -i 's|^EDITION.*$|EDITION=solyd'${DT,,}$ARM$EE$ARCH'|' $INFO
+    # and the DESCRIPTION line
+    sed -i 's|^DESCRIPTION.*$|DESCRIPTION="'"Solyd$DT${EE:+ EE} $RELEASE ${ARM:+ARM }$ARCH-bit"'"|' $INFO
+  ;;
+  upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+  ;;
+  *)
+    echo "postrm called with unknown argument \`$1'" >&2
+    exit 1
+  ;;
+esac
+
+
+
+exit 0
