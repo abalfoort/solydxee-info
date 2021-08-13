@@ -8,5 +8,12 @@
 # This has to be exported to make some magic below work.
 export DH_OPTIONS
 
+source := $(shell dpkg-parsechangelog -S Source)
+
 %:
 	dh $@
+
+override_dh_builddeb:
+	dh_builddeb
+	# Cleanup build directory when done
+	rm -rf ./debian/$(source)
