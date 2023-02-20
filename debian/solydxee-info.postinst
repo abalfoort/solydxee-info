@@ -3,7 +3,7 @@ set -e
 
 
 case "$1" in    
-  configure|reconfigure)
+  configure|reconfigure|triggered)
     # This is causing dpkg lock errors
     #PCK=$(dpkg --get-selections | cut -f1 | grep system-adjustments-)
     #dpkg-reconfigure --frontend=noninteractive $PCK
@@ -27,6 +27,11 @@ case "$1" in
     sed -i 's|^EDITION.*$|EDITION=solyd'${DT,,}$ARM$EE$ARCH'|' $INFO
     # and the DESCRIPTION line
     sed -i 's|^DESCRIPTION.*$|DESCRIPTION="'"Solyd$DT${EE:+ EE} $RELEASE ${ARM:+ARM }$ARCH-bit"'"|' $INFO
+    
+    ADJUST=$(dpkg -S adjust.py | grep solydxk-system | awk '{print $2}')
+    if [ ! -z "$ADJUST" ]; then
+      python3 $ADJUST
+    fi
   ;;
   upgrade|update)
   
@@ -50,5 +55,3 @@ esac
 #DEBHELPER#
 
 exit 0
-
-
