@@ -1,3 +1,9 @@
+solydxee-info (1.1.0) testing; urgency=low
+
+  * Add trigger on /usr/share/solydxk/info
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 20 Feb 2023 13:59:15 +0100
+
 solydxee-info (1.0.9) testing; urgency=low
 
   * Depends on solydx-system-adjustments-12
