@@ -3,7 +3,7 @@ set -e
 
 
 case "$1" in    
-  configure|reconfigure|triggered)
+  configure|reconfigure)
     # This is causing dpkg lock errors
     #PCK=$(dpkg --get-selections | cut -f1 | grep system-adjustments-)
     #dpkg-reconfigure --frontend=noninteractive $PCK
