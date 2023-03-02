@@ -9,6 +9,9 @@ case "$1" in
     
     # Setup info file
     INFO='/usr/share/solydxk/info'
+    if [ ! -e "$INFO" ]; then
+        exit 0
+    fi
     . $INFO
     DT=${DESKTOP:0:1}; [ "$DT" != "L" ] || DT=LXQt # ditto
     # Remove the Enthusiast's Edition
