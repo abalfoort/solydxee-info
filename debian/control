@@ -8,6 +8,6 @@ Standards-Version: 4.5.0
 Package: solydxee-info
 Architecture: all
 Depends: ${misc:Depends}, 
-  solydx-system-adjustments-12
+  solydx-system-adjustments-13
 Description: Info package for SolydX EE
  Package intended for the SolydX Enthusiast's Editions
