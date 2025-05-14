@@ -2,70 +2,70 @@ solydxee-info (1.1.2) testing; urgency=low
 
   * Depends on solydx-system-adjustments-13
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Fri, 09 Jun 2023 16:06:32 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Fri, 09 Jun 2023 16:06:32 +0200
 
 solydxee-info (1.1.1) testing; urgency=low
 
   * Check if info file exists in postrm
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Wed, 01 Mar 2023 10:12:14 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Wed, 01 Mar 2023 10:12:14 +0100
 
 solydxee-info (1.1.0) testing; urgency=low
 
   * Add trigger on /usr/share/solydxk/info
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 20 Feb 2023 13:59:15 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Mon, 20 Feb 2023 13:59:15 +0100
 
 solydxee-info (1.0.9) testing; urgency=low
 
   * Depends on solydx-system-adjustments-12
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Thu, 12 Aug 2021 15:08:56 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Thu, 12 Aug 2021 15:08:56 +0200
 
 solydxee-info (1.0.8) testing; urgency=low
 
   * Depends on latest adjustments package
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 29 Jul 2019 15:55:14 +0200
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Mon, 29 Jul 2019 15:55:14 +0200
 
 solydxee-info (1.0.7) testing; urgency=low
 
   * Fix dpkg errors on postinst/postrm scripts
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 13 Mar 2018 08:42:36 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Tue, 13 Mar 2018 08:42:36 +0100
 
 solydxee-info (1.0.6) testing; urgency=low
 
   * Fix postinst and postrm scripts
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 28 Feb 2017 21:07:07 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Tue, 28 Feb 2017 21:07:07 +0100
 
 solydxee-info (1.0.5) testing; urgency=low
 
   * Reconfigure solydx-system-adjustments-9 after install/remove
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Tue, 21 Feb 2017 09:34:49 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Tue, 21 Feb 2017 09:34:49 +0100
 
 solydxee-info (1.0.4) testing; urgency=low
 
   * Transitional package for solydx-info-9
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Sun, 29 Jan 2017 14:47:38 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Sun, 29 Jan 2017 14:47:38 +0100
 
 solydxee-info (1.0.3) testing; urgency=low
 
   * Changed release version to 9
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Wed, 01 Jul 2015 11:00:00 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Wed, 01 Jul 2015 11:00:00 +0100
 
 solydxee-info (1.0.1) testing; urgency=low
 
   * Adapted lsb-release
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Thu, 05 Mar 2015 11:00:00 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Thu, 05 Mar 2015 11:00:00 +0100
 
 solydxee-info (1.0.0) testing; urgency=low
 
   * Initial version 1.0.0
 
- -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Thu, 12 Feb 2015 19:00:00 +0100
+ -- Arjen Balfoort <solydxk.abalfoort@tuta.com>  Thu, 12 Feb 2015 19:00:00 +0100
